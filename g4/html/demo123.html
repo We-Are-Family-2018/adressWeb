@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>手机版右侧菜单栏滑动</title>
+
+<link rel="stylesheet" href="../css/mdui.css" />
+<link rel="stylesheet" href="../css/app.css" />
+
+</head>
+<body>
+
+<header>
+	<a class="backprev" href="javascript:history.back(-1);">
+		<i class="mdui-icon material-icons"><</i>
+	</a>
+	<div class="head-middle">个人信息</div>
+	<div class="head-right">
+		<button class="mdui-btn app-btn" mdui-drawer="{target: '#left-drawer'}"><i class="mdui-icon material-icons">...</i></button>
+		<div class="mdui-drawer mdui-drawer-right mdui-drawer-close" id="left-drawer">
+
+			<ul class="mdui-list app-slide-menu app-collapse-menu" mdui-collapse="{accordion: true}">
+			   <li class="mdui-list-item mdui-ripple app-list-home ">
+				   <a href="#" class="app-list-item-link mdui-text-left ">
+					   <div class="mdui-list-item-content">
+							<i class="mdui-list-item-icon mdui-icon material-icons">
+						   </i>首页
+					   </div>
+				   </a>
+			   </li>
+				<li class="mdui-collapse-item  app-hide-list  app-collapse-list">
+					<div class="mdui-collapse-item-header mdui-list-item mdui-ripple  mdui-p-x-0">
+						<div class="menu-click mdui-list-item-content mdui-text-left" onClick="">
+							我的信息
+							<i class="mdui-collapse-item-arrow mdui-icon material-icons mdui-float-right">
+								+
+							</i>
+						</div>
+					</div>
+					<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+						<li class="mdui-list-item mdui-ripple app-sub-list  app-hide-list">
+							<a href="#" class="app-list-item-link mdui-text-left">
+								二级栏目
+							</a>
+						</li>
+						<li class="mdui-list-item mdui-ripple app-sub-list  app-hide-list">
+							<a href="#" class="app-list-item-link mdui-text-left">
+								二级栏目
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="mdui-collapse-item  app-hide-list  app-collapse-list">
+					<div class="mdui-collapse-item-header mdui-list-item mdui-ripple  mdui-p-x-0">
+						<div class="menu-click mdui-list-item-content mdui-text-left" onClick="">
+							我的购物车
+							<i class="mdui-collapse-item-arrow mdui-icon material-icons mdui-float-right">
+								+
+							</i>
+						</div>
+					</div>
+					<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+						<li class="mdui-list-item mdui-ripple app-sub-list  app-hide-list">
+							<a href="#" class="app-list-item-link mdui-text-left">
+								二级栏目
+							</a>
+						</li>
+						<li class="mdui-list-item mdui-ripple app-sub-list  app-hide-list">
+							<a href="#" class="app-list-item-link mdui-text-left">
+								二级栏目
+							</a>
+						</li>
+						<li class="mdui-list-item mdui-ripple app-sub-list  app-hide-list">
+							<a href="#" class="app-list-item-link mdui-text-left">
+								二级栏目
+							</a>
+						</li>
+						<li class="mdui-list-item mdui-ripple app-sub-list  app-hide-list">
+							<a href="#" class="app-list-item-link mdui-text-left">
+								二级栏目
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="mdui-collapse-item app-hide-list  app-collapse-list">
+				   <a href="#" class=" mdui-list-item mdui-ripple  mdui-p-x-0">
+						<div class="menu-click mdui-list-item-content mdui-text-left">
+							地址管理
+							<i class="mdui-collapse-item-arrow mdui-icon material-icons mdui-float-right">
+								+
+							</i>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div> 
+</header>
+<div style="width: 70%;height:800px;border: 1px solid red;margin-left: 5%">
+	<iframe id="iframe" src="myInfo.html" style="width: 100%;min-height: 400px"></iframe>
+</div>
+<script src="../js/mdui.js"></script>
+
+</body>
+</html>

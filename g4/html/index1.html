@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>导航浮动</title>
+        <link href="../css/style.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.SuperSlide.2.1.1.js"></script>
+
+    </head>
+    <body>
+        <div class="aui-header-nav moveDown">
+            <div class="wrapper">
+                <a href="#">
+                    <div class="aui-logo">
+                        <h1>首页</h1>
+                    </div>
+                </a>
+                <div class="aui-top-nav" style="background-color: gainsboro;color: black">
+                    <ul class="menu">
+                        <li class="product">
+                            <a href="#">
+                                首页
+                                <span class="u-icon-caret"></span>
+                            </a>
+                            <div class="panel product" style="background-color:rgba(0,0,0,0.2);">
+                                <div class="inner">
+                                    <dl class="list">
+                                        <dt>客户服务云: </dt>
+                                        <dd style="margin-top: -2%">
+                                            <a href="#">
+                                                <i class="icon-font icon-font-item001"></i>
+                                                <em class="txt">在线客服</em>
+                                            </a>
+                                        </dd>
+                                        <dd style="margin-top: -2%">
+                                            <a href="#">
+                                                <i class="icon-font icon-font-item002"></i>
+                                                <em class="txt">机器人</em>
+                                            </a>
+                                        </dd>
+                                        <dd style="margin-top: -2%">
+                                            <a href="#">
+                                                <i class="icon-font icon-font-item003"></i>
+                                                <em class="txt">呼叫中心</em>
+                                            </a>
+                                        </dd>
+                                        <dd style="margin-top: -2%">
+                                            <a href="#">
+                                                <i class="icon-font icon-font-item004"></i>
+                                                <em class="txt">工单系统</em>
+                                            </a>
+                                        </dd>
+                                    </dl>
+                                    <dl class="list">
+                                        <dt>营销服务云: </dt>
+                                        <dd style="margin-top: -2%">
+                                            <a href="#">
+                                                <i class="icon-font icon-font-item005"></i>
+                                                <em class="txt">营销服务</em>
+                                            </a>
+                                        </dd>
+                                    </dl>
+                                    <dl class="list">
+                                        <dt>场景支持: </dt>
+                                        <dd style="margin-top: -2%">
+                                            <a href="#">
+                                                <i class="icon-font icon-font-item006"></i>
+                                                <em class="txt">移动办公</em>
+                                            </a>
+                                        </dd>
+                                        <dd style="margin-top: -2%">
+                                            <a href="#">
+                                                <i class="icon-font icon-font-item007"></i>
+                                                <em class="txt">微信客服</em>
+                                            </a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="finance">
+                            <a href="#">
+                                护肤
+                                <span class="u-icon-caret"></span>
+                            </a>
+                            <div class="panel finance" style="background-color:rgba(0,0,0,0.2);">
+                                <div class="inner">
+                                    <dl class="list">
+                                        <dd style="margin-left: -405px;">
+                                            <a href="#">
+                                                <i class="icon-font icon-font-item001"></i>
+                                                <em class="txt">互金解决方案</em>
+                                            </a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">彩妆
+                            </a>
+                        </li>
+                        <li class="price">
+                            <a href="#">
+                                香氛
+                                <span class="u-icon-caret"></span>
+                            </a>
+                        </li>
+                        <li class="service">
+                            <a href="#">服务
+                            </a>
+                        </li>
+                        <li class="merchants">
+                            <a href="#">渠道合作
+                            </a>
+                        </li>
+                        <li class="college">
+                            <a href="#">轻学院
+                            </a>
+                        </li>
+                        <li class="qa">
+                            <a href="#">
+                                个人中心
+                                <span class="u-icon-caret"></span>
+                            </a>
+                            <div class="panel qa" style="background-color:rgba(0,0,0,0.2);">
+                                <div class="inner">
+                                    <dl class="list">
+                                        <dd>
+                                            <a href="#">
+                                                <i class="icon-font icon-font-item002"></i>
+                                                <em class="txt">我的信息</em>
+                                            </a>
+                                        </dd>
+                                        <dd>
+                                            <a href="#">
+                                                <i class="icon-font icon-font-item003"></i>
+                                                <em class="txt">我的地址</em>
+                                            </a>
+                                        </dd>
+                                        <dd>
+                                            <a href="#">
+                                                <i class="icon-font icon-font-item004"></i>
+                                                <em class="txt">我的购物车</em>
+                                            </a>
+                                        </dd>
+                                        <dd>
+                                            <a href="#">
+                                                <i class="icon-font icon-font-item005"></i>
+                                                <em class="txt">我的订单</em>
+                                            </a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="community">
+                            <a href="#">AERIN</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="m-login">
+                    <a href="#" class="u-btn  sign">登录</a>
+                    <a href="#" class="u-btn  free">免费试用</a>
+                </div>
+            </div>
+        </div>
+        <div class="aui-banner-slide"></div>
+        <div style="height:1200px;"></div><!-- 可删除 -->
+
+        <script type="text/javascript">
+            jQuery(".aui-banner-main").slide({
+                mainCell: ".bd ul",
+                effect: "left",
+                autoPlay: true,
+                trigger: "click",
+                delayTime: 700
+            });
+
+            $(window).on('scroll', function() {
+                if ($(document).scrollTop() > 10) {
+                    $('.aui-header-nav').addClass('solid').removeClass('moveDown');
+                    $('.aui-header-top').addClass('moveUp');
+                } else {
+                    $('.aui-header-nav').removeClass('solid').addClass('moveDown');
+                    $('.aui-header-top').removeClass('moveUp');
+                }
+            });
+        </script>
+		
+    </body>
+</html>

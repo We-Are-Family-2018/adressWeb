@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/helang.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="../css/mui.min.css">-->
+    <!--<script src="../js/mui.min.js"></script>-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div>
+    <div class="modal-body" style="text-align: center">
+        <table style="width: 100%">
+            <tr>
+                <td style="width: 20%">姓名</td>
+                <td style="width: 20%">电话</td>
+                <td style="width: 20%">地址</td>
+                <td style="width: 20%">操作</td>
+            </tr>
+            <tr>
+                <td>冯世宁</td>
+                <td>13456310889</td>
+                <td>北京 朝阳</td>
+                <td>
+                    <button data-toggle="modal" data-target="#myModal">修改</button>
+                    <button>删除</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="display: flex;flex-direction: column;justify-content: space-between">
+            <div class="modal-header" style="text-align: center">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">登入</h4>
+            </div>
+            <div class="modal-body" style="text-align: center">
+                <div>
+                    用户名<input type="text" placeholder="请输入您的用户名" name="lname" id="username" required>
+                    <span><img src="../img/yhm.png"></span>
+                </div>
+                <div style="margin-top: 3%">
+                    密&nbsp&nbsp&nbsp&nbsp码<input type="password" id="password" placeholder="请输入您的密码" name="lwd" required minlength="6" maxlength="15">
+                    <span><img src="../img/mm.png"></span>
+                </div>
+
+            </div>
+            <div style="text-align: center;margin-bottom: 2%">
+                <button type="button" class="btn btn-primary" style="width: 45%">登入</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+</body>
+</html>

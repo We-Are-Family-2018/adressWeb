@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>商城购物车</title>
+    <link rel="stylesheet" href="../css/header.css"/>
+    <link rel="stylesheet" href="../css/footer.css"/>
+    <link rel="stylesheet" href="../css/cart1.css"/>
+    <link rel="stylesheet" href="../css/helang.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="../css/mui.min.css">-->
+    <!--<script src="../js/mui.min.js"></script>-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link href="../css/style.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="../js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+<body>
+<!-- 页面顶部-->
+<div style="width: 80%;margin-left: 10%">
+    <div class="aui-header-nav moveDown" style="margin-left: -15%">
+        <div class="wrapper">
+            <div class="aui-top-nav" style="background-color: gainsboro;color: black">
+                <ul class="menu">
+
+                    <li class="finance">
+                        <a href="#">
+                            护肤
+                            <span class="u-icon-caret"></span>
+                        </a>
+                        <div class="panel product" style="background-color:rgba(0,0,0,0.2);">
+                            <div class="inner" style="margin-left: -17%;">
+                                <dl class="list">
+                                    <dt>明星系列: </dt>
+                                    <dd style="margin-top: -2%">
+                                        <a href="#">
+                                            <i class="icon-font icon-font-item001"></i>
+                                            <em class="txt">明星小棕瓶系列</em>
+                                        </a>
+                                    </dd>
+                                    <dd style="margin-top: -2%">
+                                        <a href="#">
+                                            <i class="icon-font icon-font-item002"></i>
+                                            <em class="txt">红石榴系列</em>
+                                        </a>
+                                    </dd>
+                                    <dd style="margin-top: -2%">
+                                        <a href="#">
+                                            <i class="icon-font icon-font-item003"></i>
+                                            <em class="txt">多效智妍系列</em>
+                                        </a>
+                                    </dd>
+                                    <dd style="margin-top: -2%">
+                                        <a href="#">
+                                            <i class="icon-font icon-font-item004"></i>
+                                            <em class="txt">晶透沁白系列</em>
+                                        </a>
+                                    </dd>
+                                </dl>
+                                <dl class="list">
+                                    <dt>产品类型: </dt>
+                                    <dd style="margin-top: -2%">
+                                        <a href="#">
+                                            <i class="icon-font icon-font-item005"></i>
+                                            <em class="txt">卸妆清洁调理</em>
+                                        </a>
+                                    </dd>
+                                </dl>
+                                <dl class="list">
+                                    <dt>美肤方案: </dt>
+                                    <dd style="margin-top: -2%">
+                                        <a href="#">
+                                            <i class="icon-font icon-font-item006"></i>
+                                            <em class="txt">健康鲜活亮采</em>
+                                        </a>
+                                    </dd>
+                                    <dd style="margin-top: -2%">
+                                        <a href="#">
+                                            <i class="icon-font icon-font-item007"></i>
+                                            <em class="txt">深度保湿</em>
+                                        </a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">彩妆
+                        </a>
+                        <div class="panel product" style="background-color:rgba(0,0,0,0.2);">
+                            <div class="inner" style="margin-left: -17%;">
+                                <dl class="list">
+                                    <dt>面部: </dt>
+                                    <dd style="margin-top: -2%">
+                                        <a href="#">
+                                            <i class="icon-font icon-font-item001"></i>
+                                            <em class="txt">妆前乳/粉底液</em>
+                                        </a>
+                                    </dd>
+                                    <dd style="margin-top: -2%">
+                                        <a href="#">
+                                            <i class="icon-font icon-font-item002"></i>
+                                            <em class="txt">气垫</em>
+                                        </a>
+                                    </dd>
+                                    <dd style="margin-top: -2%">
+                                        <a href="#">
+                                            <i class="icon-font icon-font-item003"></i>
+                                            <em class="txt">粉饼</em>
+                                        </a>
+                                    </dd>
+                                    <dd style="margin-top: -2%">
+                                        <a href="#">
+                                            <i class="icon-font icon-font-item004"></i>
+                                            <em class="txt">遮瑕膏</em>
+                                        </a>
+                                    </dd>
+                                </dl>
+                                <dl class="list">
+                                    <dt>眼部: </dt>
+                                    <dd style="margin-top: -2%">
+                                        <a href="#">
+                                            <i class="icon-font icon-font-item005"></i>
+                                            <em class="txt">眼影</em>
+                                        </a>
+                                    </dd>
+                                    <dd style="margin-top: -2%">
+                                        <a href="#">
+                                            <i class="icon-font icon-font-item005"></i>
+                                            <em class="txt">睫毛膏</em>
+                                        </a>
+                                    </dd>
+                                    <dd style="margin-top: -2%">
+                                        <a href="#">
+                                            <i class="icon-font icon-font-item005"></i>
+                                            <em class="txt">眼线笔-液</em>
+                                        </a>
+                                    </dd>
+                                </dl>
+                                <dl class="list">
+                                    <dt>唇部: </dt>
+                                    <dd style="margin-top: -2%">
+                                        <a href="#">
+                                            <i class="icon-font icon-font-item006"></i>
+                                            <em class="txt">唇膏</em>
+                                        </a>
+                                    </dd>
+                                    <dd style="margin-top: -2%">
+                                        <a href="#">
+                                            <i class="icon-font icon-font-item007"></i>
+                                            <em class="txt">唇彩&唇釉</em>
+                                        </a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="price">
+                        <a href="#">
+                            香氛
+                            <span class="u-icon-caret"></span>
+                        </a>
+                    </li>
+                    <li class="service">
+                        <a href="#">AERIN
+                        </a>
+                    </li>
+                    <li class="merchants">
+                        <a href="#">畅销榜单
+                        </a>
+                    </li>
+                    <li class="college">
+                        <a href="#">独享套装
+                        </a>
+                    </li>
+                    <li class="qa">
+                        <a href="#">
+                            个人中心
+                            <span class="u-icon-caret"></span>
+                        </a>
+                        <div class="panel qa" style="background-color:rgba(0,0,0,0.2);">
+                            <div class="inner" style="margin-left: -17%;">
+                                <dl class="list">
+                                    <dd>
+                                        <a href="#">
+                                            <i class="icon-font icon-font-item002"></i>
+                                            <em class="txt">我的信息</em>
+                                        </a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">
+                                            <i class="icon-font icon-font-item003"></i>
+                                            <em class="txt">我的地址</em>
+                                        </a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">
+                                            <i class="icon-font icon-font-item004"></i>
+                                            <em class="txt">我的购物车</em>
+                                        </a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">
+                                            <i class="icon-font icon-font-item005"></i>
+                                            <em class="txt">我的订单</em>
+                                        </a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">
+                                            <i class="icon-font icon-font-item005"></i>
+                                            <em class="txt" data-toggle="modal" data-target="#myModal1">立即注册</em>
+                                        </a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="community">
+                        <a href="#">AERIN</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="m-login">
+                <a href="#" class="u-btn  sign" data-toggle="modal" data-target="#myModal" id="login">登录</a>
+                <a href="#" class="u-btn  free">免费试用</a>
+            </div>
+            <div style="margin-left: 5%">
+                <label style="margin-top:1.5%" onclick="search()">搜索</label>
+                <input style="border-radius: 5px;width: 10%" type="text" id="searchContent">
+            </div>
+        </div>
+    </div>
+    <div class="aui-banner-slide"></div>
+    <div style="height:100px;"></div><!-- 可删除 -->
+
+    <script type="text/javascript">
+        jQuery(".aui-banner-main").slide({
+            mainCell: ".bd ul",
+            effect: "left",
+            autoPlay: true,
+            trigger: "click",
+            delayTime: 700
+        });
+
+        $(window).on('scroll', function() {
+            if ($(document).scrollTop() > 10) {
+                $('.aui-header-nav').addClass('solid').removeClass('moveDown');
+                $('.aui-header-top').addClass('moveUp');
+            } else {
+                $('.aui-header-nav').removeClass('solid').addClass('moveDown');
+                $('.aui-header-top').removeClass('moveUp');
+            }
+        });
+    </script>
+
+</div>
+<div class="big" style="margin-top: 5%">
+    <form  name="" action="" method="post">
+        <section id="section" >
+            <div id="title">
+                <b>购物车</b>
+            </div>
+            <div id="box" >
+                <div id="content_box">
+                    <div class="imfor_top">
+                        <div class="check_top" style="background-color:white;color: black">
+                            <div class="all">
+                            <span class="normal"  style="background-color:white">
+                                <img src="../images/cart/product_normal.png" alt=""/>
+                            </span>  <input type="hidden" name="" value="" style="background-color:white">全选
+                            </div>
+                        </div>
+                        <div class="pudc_top" style="background-color:white;color: black">商品</div>
+                        <div class="pices_top" style="background-color:white;color: black">单价(元)</div>
+                        <div class="num_top" style="background-color:white;color: black">数量</div>
+                        <div class="totle_top" style="background-color:white;color: black">金额</div>
+                        <div class="del_top" style="background-color:white;color: black">操作</div>
+                    </div>
+                    <div class="imfor">
+                        <div class="check">
+                            <div class="Each">
+                            <span class="normal">
+                                <img src="../images/cart/product_normal.png" alt=""/>
+                            </span>
+                                <input type="hidden" name="" value="">
+                            </div>
+                        </div>
+                        <div class="pudc">
+                            <div class="pudc_information" id="pudcId3">
+                                <img src="../images/cart/product_simg1.png" class="lf"/>
+                                <input type="hidden" name="" value="">
+                        <span class="des lf">
+                            联想(Lenovo)YOGA5 PRO 标配版电脑(i5-7200u 8G 512G SSD FHD IPS)银
+                              <input type="hidden" name="" value="">
+                        </span>
+                                <p class="col lf"><span>颜色：</span><span class="color_des">深空灰  <input type="hidden" name="" value=""></span></p>
+                            </div>
+                        </div>
+                        <div class="pices">
+                            <p class="pices_des">达内专享价</p>
+                            <p class="pices_information"><b>￥</b><span>4888.00  <input type="hidden" name="" value=""></span></p>
+                        </div>
+                        <div class="num"><span class="reduc" style="height: 22px">&nbsp;-&nbsp;</span><input type="text" value="1" ><span class="add">&nbsp;+&nbsp;</span></div>
+                        <div class="totle">
+                            <span>￥</span>
+                            <span class="totle_information">4888.00</span>
+                        </div>
+                        <div class="del">
+                            <!-- <div>
+                                <img src="img/true.png" alt=""/>
+                                <span>已移入收藏夹</span>
+                            </div>
+                             <a href="javascript:;" class="del_yr">移入收藏夹</a>
+                            -->
+                            <a href="javascript:;" class="del_d">删除</a>
+                        </div>
+                    </div>
+                    <div class="imfor">
+                        <div class="check">
+                            <div class="Each">
+                            <span class="normal">
+                                <img src="../images/cart/product_normal.png" alt=""/>
+                            </span>
+                            </div>
+                        </div>
+                        <div class="pudc">
+                            <div class="pudc_information" id="pudcId1">
+                                <img src="../images/cart/product_simg1.png" class="lf"/>
+                                <input type="hidden" name="" value="">
+                         <span class="des lf">
+                            联想(Lenovo)YOGA5 PRO 标配版电脑(i5-7200u 8G 512G SSD FHD IPS)银
+                             <input type="hidden" name="" value="">
+                        </span>
+                                <p class="col lf"><span>颜色：</span><span class="color_des">玫瑰金  <input type="hidden" name="" value=""></span></p>
+                            </div>
+                        </div>
+                        <div class="pices">
+                            <p class="pices_des">达内专享价</p>
+                            <p class="pices_information"><b>￥</b><span>4888.00</span></p>
+                        </div>
+                        <div class="num"><span class="reduc">&nbsp;-&nbsp;</span><input type="text" value="1" /><span class="add">&nbsp;+&nbsp;</span></div>
+                        <div class="totle">
+                            <span>￥</span>
+                            <span class="totle_information">4888.00</span>
+                        </div>
+                        <div class="del">
+                            <!-- <div>
+                                 <img src="img/true.png" alt=""/>
+                                 <span>已移入收藏夹</span>
+                             </div>
+                              <a href="javascript:;" class="del_yr">移入收藏夹</a>
+                             -->
+                            <a href="javascript:;" class="del_d">删除</a>
+                        </div>
+                    </div>
+                    <div class="imfor">
+                        <div class="check">
+                            <div class="Each">
+                                <span class="normal"><img src="../images/cart/product_normal.png" alt=""/></span>
+                            </div>
+                        </div>
+                        <div class="pudc">
+                            <div class="pudc_information" id="pudcId2">
+                                <img src="../images/cart/product_simg1.png" class="lf"/>
+                                <input type="hidden" name="" value="">
+                         <span class="des lf">
+                            联想(Lenovo)YOGA5 PRO 标配版电脑(i5-7200u 8G 512G SSD FHD IPS)银
+                               <input type="hidden" name="" value="">
+                        </span>
+                                <p class="col lf"><span>颜色：</span><span class="color_des">炫酷黑  <input type="hidden" name="" value=""></span></p>
+                            </div>
+                        </div>
+                        <div class="pices">
+                            <p class="pices_des">达内专享价</p>
+                            <p class="pices_information"><b>￥</b><span>4888.00</span></p>
+                        </div>
+                        <div class="num"><span class="reduc">&nbsp;-&nbsp;</span><input type="text" value="1" /><span class="add">&nbsp;+&nbsp;</span></div>
+                        <div class="totle">
+                            <span>￥</span>
+                            <span class="totle_information">4888.00</span>
+                        </div>
+                        <div class="del">
+                            <!-- <div>
+                               <img src="img/true.png" alt=""/>
+                               <span>已移入收藏夹</span>
+                           </div>
+                            <a href="javascript:;" class="del_yr">移入收藏夹</a>
+                           -->
+                            <a href="javascript:;" class="del_d">删除</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot" style="background-color: white">
+                    <div class="foot_check" style="background-color: white">
+                        <div class="all" style="background-color: white">
+                        <span class="normal">
+                                <img src="../images/cart/product_normal.png" alt=""/>
+                            </span>  <input type="hidden" name="" value="">全选
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="foot_del">删除</a>
+                    <!--<a href="javascript:;" class="foot_yr">移入收藏夹</a>-->
+                    <div class="foot_cash" id="go-buy" data-toggle="modal" data-target="#myModal1">去结算</div>
+                    <div class="foot_tol"><span>合计(不含运费):</span><span  class="foot_pices susumOne">0.00</span><span class='foot_des'>元</span></div>
+                    <div class="foot_selected">
+                        已选<span class="totalOne color">0</span>件商品
+                    </div>
+                </div>
+            </div>
+        </section>
+    </form>
+    <div class="none" style="display: none">
+        <p class="none_title">购物车</p>
+        <div class="none_top"></div>
+        <div class="none_content">
+            <img src="../images/30.png" alt="" class="lf"/>
+            <p class="lf">您的购物车竟然还是空哒( ⊙ o ⊙ )</p>
+            <span class="lf">赶快去下单吧！</span>
+            <a href="#" class="lf">去购物>></a>
+        </div>
+
+    </div>
+</div>
+<!-- 品质保障，私人定制等-->
+<div id="foot_box"></div>
+<!-- 页面底部-->
+<div class="foot_bj"></div>
+
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="display: flex;flex-direction: column;justify-content: space-between">
+            <div class="modal-header" style="text-align: center">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel1">金额确认</h4>
+            </div>
+            <div class="modal-body" style="text-align: center">
+                <div style="font-size: large;font-weight: bold">688￥</div>
+                <div style="display: flex;flex-direction: row;justify-content: center;align-content: center;margin-top: 2%"><span style="margin-top: 1%">支付密码</span><input style="margin-left: 2%;border: 1px"></div>
+            </div>
+            <div style="text-align: center;margin-bottom: 2%">
+                <button type="button" class="btn btn-primary" style="width: 45%">确认支付</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div><
+<script src="../js/jquery.min.js"></script>
+<script src="../js/cart.js"></script>
+<script src="../js/index.js"></script>
+<script>
+    <!-- 显示空购物车页面-->
+    $(function(){
+        if(!$(".imfor")) {
+            $('#section').hide();
+            $('.none').show();
+        }
+    })
+</script>
+</body>
+</html>
